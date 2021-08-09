@@ -10,5 +10,9 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: #2f212d;
+}
+
+p {
+  color: rgb(243, 234, 242);
 }
