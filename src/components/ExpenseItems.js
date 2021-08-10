@@ -1,20 +1,20 @@
+import ExpenseDates from './ExpenseDates'
 import './ExpenseItems.css'
-const ExpenseItems = () => {
-        const expenseDates = new Date(2021, 4, 12);
-        const expenseTitles = 'Tuition';
-        const expenseAmounts = 4890.00;
+
+const ExpenseItems = (props) => {
         return ( < div className = "expense-item" >
             <
-            div > {
-                expenseDates.toString()
-            } < /div> <
+            ExpenseDates date = {
+                props.date
+            }
+            /> <
             div className = "expense-item__description" >
             <
             h2 > {
-                expenseTitles
+                props.title
             } < /h2> <
-            div className = "expense-item__price" > {
-                expenseAmounts
+            div className = "expense-item__price" > $ {
+                props.amount
             } < /div> < /
             div > <
             /div>);
